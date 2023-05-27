@@ -7,7 +7,7 @@ import { environment } from 'src/environments/environment';
 })
 export class DashboardService {
 
-  url=environment.apiUrl;
+  url=environment.getApiUrl("api");
 
   constructor(private http:HttpClient) { }
 

@@ -9,7 +9,7 @@ import { Product } from '../customer/model/product.model';
 })
 export class ProductService {
 
-  url=environment.apiUrl;//url
+  url=environment.getApiUrl("api");
   constructor(private http:HttpClient) { }
 
   add(data:any){

@@ -7,7 +7,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 })
 export class CategoryService {
 
-  url=environment.apiUrl;
+  url=environment.getApiUrl("api");
   constructor(private http:HttpClient) { }
 
   add(data:any){
