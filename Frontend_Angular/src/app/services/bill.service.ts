@@ -9,7 +9,7 @@ import { environment } from 'src/environments/environment';
 export class BillService {
 
 
-  url=environment.apiUrl;
+  url=environment.getApiUrl("api");
   constructor(private http:HttpClient) { }
 
   generateReport(data:any){
